@@ -68,9 +68,9 @@ class Redmine(object):
                 user.is_superuser = True
                 user.save()
             else:
-                if not user.has_usable_password():
-                    user.set_password(password)
-                    user.save()
+                # valid redmine password, so store it
+                user.set_password(password)
+                user.save()
             return user
         return None
 
