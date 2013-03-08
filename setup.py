@@ -8,4 +8,5 @@ setup(name='django-redmineauth',
     author='Tom Viner',
     author_email='tom@viner.tv',
     packages=['redmineauth',],
+    install_requires=['requests'],
 )
